@@ -4,7 +4,7 @@
 // License: MIT
 // https://github.com/roblatour/ESP32NetorkTimeTemplate
 //
-// Template Arduino / C++ code for ESP32s to get and periodically sync the local time from a network time server
+// Template Arduino sketch / C++ code for an ESP32 to get and periodically sync the local time from a network time server
 // using the Network Time Protocol (NTP) and the ESP32's built-in time functions
 //
 
