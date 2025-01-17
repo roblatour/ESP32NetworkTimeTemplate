@@ -1,6 +1,6 @@
 # ESP32 Network Time Template
 
-template Arduino / C++ code for ESP32s to get and periodically sync local time from a network time server
+template Arduino / C++ sketch for ESP32s to get and periodically sync local time from a network time server
 
 * * *
 ## ESP32 Network Time Template
