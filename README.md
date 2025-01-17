@@ -1,6 +1,8 @@
 # ESP32 Network Time Template
 
-template Arduino / C++ sketch for ESP32s to get and periodically sync local time from a network time server
+An open source template Arduino / C++ sketch for ESP32s to get and periodically sync local time from a network time server.
+
+License: MIT
 
 * * *
 
