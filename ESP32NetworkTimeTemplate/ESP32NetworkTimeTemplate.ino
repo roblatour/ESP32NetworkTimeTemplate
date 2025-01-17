@@ -1,4 +1,4 @@
-// ESP32 Network Time Template (v1.0.1)
+// ESP32 Network Time Template (v1.0.2)
 //
 // Copyright Rob Latour, 2025
 // License: MIT
@@ -83,7 +83,7 @@ bool connectToWifi()
     if (WiFi.status() == WL_CONNECTED)
     {
         writeToDebugConsole("Connected with IP address ", false);
-        writeToDebugConsole(String(WiFi.localIP()));
+        writeToDebugConsole(WiFi.localIP().toString());
         return true;
     }
     else
