@@ -1,4 +1,5 @@
 #define USER_SETTINGS_NTP_SERVER_1                             "pool.ntp.org"
+#define USER_SETTINGS_NTP_SERVER_2                             "time.cloudflare.com"
 #define USER_SETTINGS_NTP_SERVER_2                             "time.nist.gov"
 
 #define USER_SETTINGS_POSIX_TIME_ZONE_CODE                     "EST5EDT,M3.2.0,M11.1.0" // POSIX tme zone code for America/Toronto

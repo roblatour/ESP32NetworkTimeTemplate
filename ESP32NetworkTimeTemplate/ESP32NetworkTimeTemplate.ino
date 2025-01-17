@@ -1,4 +1,4 @@
-// ESP32 Network Time Template (v1)
+// ESP32 Network Time Template (v1.0.1)
 //
 // Copyright Rob Latour, 2025
 // License: MIT
@@ -27,6 +27,7 @@ const char *wifiSSID = SECRET_SETTINGS_WIFI_SSID;
 const char *wifiPassword = SECRET_SETTINGS_WIFI_PASSWORD;
 const char *ntpServer1 = USER_SETTINGS_NTP_SERVER_1;
 const char *ntpServer2 = USER_SETTINGS_NTP_SERVER_2;
+const char *ntpServer3 = USER_SETTINGS_NTP_SERVER_3;
 const char *posixTimeZoneCode = USER_SETTINGS_POSIX_TIME_ZONE_CODE;
 
 const float resyncAfterThisManyHours = USER_SETTINGS_RESYNC_TIME_AFTER_THIS_MANY_HOURS;
@@ -114,7 +115,7 @@ void getNetworkTime()
     sntp_set_time_sync_notification_cb([](struct timeval *tv)
                                        { networkTimeSyncComplete = true; });
 
-    configTzTime(posixTimeZoneCode, ntpServer1, ntpServer2);
+    configTzTime(posixTimeZoneCode, ntpServer1, ntpServer2, ntpServer3);
 
     writeToDebugConsole("");
     writeToDebugConsole("Waiting for time synchronization");
